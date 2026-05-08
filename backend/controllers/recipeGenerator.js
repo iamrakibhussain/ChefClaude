@@ -1,8 +1,5 @@
-import dotenv from "dotenv"
+import "../config/loadEnv.js"
 import OpenAI from "openai"
-import { fileURLToPath } from "node:url"
-
-dotenv.config({ path: fileURLToPath(new URL("../.env", import.meta.url)) })
 
 const client = new OpenAI()
 
